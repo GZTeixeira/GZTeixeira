@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GZ Teixeira Advocacia | Gilson Zorzetti</title>
+    <style>
+        /* Estilos Globais focados em Mobile-First */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: #121212;
+            color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 15px;
+        }
+
+        /* Container Principal imitando um cartão de visita vertical */
+        .card-container {
+            width: 100%;
+            max-width: 400px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #222222 100%);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Detalhe elegante em dourado no topo */
+        .card-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #b38f46, #d4af37, #f3e5ab);
+        }
+
+        /* Estilização do Logo baseado na imagem */
+        .logo-section {
+            margin-bottom: 25px;
+        }
+
+        .logo-symbol {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 2px solid #d4af37;
+            margin: 0 auto 15px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, #2a2a2a 0%, #151515 100%);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.1);
+        }
+
+        /* Ícone minimalista da balança da justiça em SVG */
+        .logo-symbol svg {
+            width: 50px;
+            height: 50px;
+            fill: #d4af37;
+        }
+
+        .brand-header {
+            font-size: 14px;
+            letter-spacing: 3px;
+            color: #d4af37;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .main-name {
+            font-size: 26px;
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1.2;
+        }
+
+        .main-name span {
+            color: #d4af37;
+            display: block;
+            font-size: 22px;
+            font-weight: 400;
+            margin-top: 2px;
+        }
+
+        .sub-badge {
+            display: inline-block;
+            font-size: 11px;
+            color: #a0a0a0;
+            letter-spacing: 1px;
+            margin-top: 5px;
+            text-transform: uppercase;
+        }
+
+        /* Divisor elegante */
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.4), transparent);
+            margin: 20px 0;
+        }
+
+        /* Seção de Informações de Contato e Endereço */
+        .info-section {
+            margin-bottom: 30px;
+            text-align: left;
+            padding: 0 10px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #e0e0e0;
+        }
+
+        .info-item strong {
+            color: #d4af37;
+            margin-right: 6px;
+        }
+
+        .info-item a {
+            color: #e0e0e0;
+            text-decoration: none;
+        }
+
+        /* Botão Principal Interativo do WhatsApp */
+        .btn-whatsapp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #128C7E 0%, #25D366 100%);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn-whatsapp:active {
+            transform: scale(0.98);
+            box-shadow: 0 2px 8px rgba(37, 211, 102, 0.2);
+        }
+
+        .btn-whatsapp svg {
+            width: 24px;
+            height: 24px;
+            fill: #ffffff;
+            margin-right: 10px;
+        }
+
+        /* Rodapé sutil */
+        .footer-credit {
+            margin-top: 25px;
+            font-size: 11px;
+            color: #666666;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="logo-section">
+            <div class="brand-header">GZ Teixeira</div>
+            <div class="logo-symbol">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12,2A2,2 0 0,1 14,4C14,4.74 13.6,5.39 13,5.73V7H18.5A1.5,1.5 0 0,1 20,8.5A1.5,1.5 0 0,1 18.5,10H17.29C18.4,12.04 19.83,13.79 21,15.11V16H3V15.11C4.17,13.79 5.6,12.04 6.71,10H5.5A1.5,1.5 0 0,1 4,8.5A1.5,1.5 0 0,1 5.5,7H11V5.73C10.4,5.39 10,4.74 10,4A2,2 0 0,1 12,2M6.5,15H9.5C8.83,13.56 7.91,11.75 7.3,10H6.7C6.16,11.75 5.21,13.56 4.5,15H6.5M14.5,15H17.5C16.79,13.56 15.84,11.75 15.3,10H14.7C14.09,11.75 13.17,13.56 12.5,15H14.5M12,17A1,1 0 0,1 13,18V20H17V22H7V20H11V18A1,1 0 0,1 12,17Z"/>
+                </svg>
+            </div>
+            <h1 class="main-name">Gilson Zorsetti<span>TEIXEIRA</span></h1>
+            <div class="sub-badge">Advocacia — Desde 2012</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="info-section">
+            <div class="info-item">
+                <strong>Fone/Whats:</strong> (19) 99281-2280
+            </div>
+            <div class="info-item">
+                <strong>E-mail:</strong> <a href="mailto:gz.teixeiraadvocacia@gmail.com">gz.teixeiraadvocacia@gmail.com</a>
+            </div>
+            <div class="info-item" style="align-items: flex-start;">
+                <strong>Endereço:</strong> 
+                <span>Rua João Baptista Francisco, 175<br>Jardim Alto dos Laranjais<br>Limeira/SP</span>
+            </div>
+        </div>
+
+        <button class="btn-whatsapp" id="whatsappBtn">
+            <svg viewBox="0 0 24 24">
+                <path d="M12.04 2C6.5 2 2 6.5 2 12.04c0 1.92.54 3.72 1.48 5.27L2 22l4.89-1.28c1.5.85 3.22 1.32 5.15 1.32 5.54 0 10.04-4.5 10.04-10.04C22.08 6.5 17.58 2 12.04 2zm6.2 14.15c-.25.7-.1.1-.1.1-.33.91-1.37 1.48-2.28 1.58-.62.07-1.38-.08-3.73-1.04-2.67-1.08-4.32-3.8-4.45-3.98-.14-.17-1.09-1.45-1.09-2.77 0-1.32.69-1.97.94-2.23.25-.26.54-.32.72-.32.18 0 .36 0 .52.01.17.01.39-.06.61.47.23.55.79 1.93.86 2.07.07.14.12.3.02.49-.1.19-.15.3-.3.48-.15.17-.32.39-.46.52-.16.15-.33.32-.14.65.19.33.85 1.41 1.83 2.28 1.26 1.12 2.33 1.47 2.66 1.63.33.17.53.14.73-.09.2-.23.86-1 1.09-1.34.23-.34.46-.29.73-.19.27.1 1.72.81 2.02.96.29.15.49.22.56.34.08.13.08.74-.17 1.44z"/>
+            </svg>
+            Iniciar Atendimento
+        </button>
+
+        <div class="footer-credit">
+            © 2026 GZ Teixeira Advocacia
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
