@@ -55,23 +55,23 @@
         }
 
         .logo-symbol {
-            width: 90px;
-            height: 90px;
+            width: 120px; /* Ajustado o tamanho para valorizar a nova imagem */
+            height: 120px;
             border-radius: 50%;
-            border: 2px solid #d4af37;
             margin: 0 auto 15px auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: radial-gradient(circle, #2a2a2a 0%, #151515 100%);
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.1);
+            background: #1A1A1A; /* Fundo escuro idêntico ao cartão */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
         }
 
-        /* Ícone minimalista da balança da justiça em SVG */
-        .logo-symbol svg {
-            width: 50px;
-            height: 50px;
-            fill: #d4af37;
+        /* Nova estilização para a imagem direta do PostImg */
+        .logo-symbol img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Garante que a imagem não fique esticada ou cortada */
         }
 
         .brand-header {
@@ -184,9 +184,7 @@
         <div class="logo-section">
             <div class="brand-header">GZ Teixeira</div>
             <div class="logo-symbol">
-                <svg viewBox="0 0 24 24">
-                    <path d="M12,2A2,2 0 0,1 14,4C14,4.74 13.6,5.39 13,5.73V7H18.5A1.5,1.5 0 0,1 20,8.5A1.5,1.5 0 0,1 18.5,10H17.29C18.4,12.04 19.83,13.79 21,15.11V16H3V15.11C4.17,13.79 5.6,12.04 6.71,10H5.5A1.5,1.5 0 0,1 4,8.5A1.5,1.5 0 0,1 5.5,7H11V5.73C10.4,5.39 10,4.74 10,4A2,2 0 0,1 12,2M6.5,15H9.5C8.83,13.56 7.91,11.75 7.3,10H6.7C6.16,11.75 5.21,13.56 4.5,15H6.5M14.5,15H17.5C16.79,13.56 15.84,11.75 15.3,10H14.7C14.09,11.75 13.17,13.56 12.5,15H14.5M12,17A1,1 0 0,1 13,18V20H17V22H7V20H11V18A1,1 0 0,1 12,17Z"/>
-                </svg>
+                <img src="https://i.postimg.cc/XvynPTkS/Logo.png" alt="Logo GZ Teixeira Advocacia">
             </div>
             <h1 class="main-name">Gilson Zorzetti<span>TEIXEIRA</span></h1>
             <div class="sub-badge">Advocacia — Desde 2012</div>
